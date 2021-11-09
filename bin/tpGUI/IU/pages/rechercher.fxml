@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane fx:id="stP" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tpGUI.Control.RechercherControl">
+   <children>
+      <BorderPane id="rechercher" fx:id="bp2" disable="true" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="859.0" visible="false" StackPane.alignment="CENTER">
+         <top>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="77.0" prefWidth="850.0" text="Les resultats :" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <graphic>
+                  <Pane prefHeight="85.0" prefWidth="861.0">
+                     <children>
+                        <Label fx:id="nbResultatLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="576.0" layoutY="3.0" prefHeight="81.0" prefWidth="284.0" text="nb resultats trouves" textAlignment="CENTER" textFill="#b2b2b2" wrapText="true">
+                           <font>
+                              <Font name="Verdana Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </graphic>
+            </Label>
+         </top>
+         <center>
+            <ScrollPane fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="545.0" prefWidth="861.0" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <content>
+                  <VBox fx:id="vb1" prefHeight="524.0" prefWidth="841.0" />
+               </content>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+      <BorderPane id="rechercher" fx:id="bp1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="859.0">
+         <center>
+            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefViewportHeight="600.0" prefViewportWidth="850.0" prefWidth="830.0" BorderPane.alignment="CENTER">
+               <content>
+                  <VBox alignment="CENTER" spacing="30.0">
+                     <children>
+                        <GridPane alignment="CENTER_LEFT" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="562.0" prefWidth="584.0" vgap="18.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="89.0" prefWidth="422.0" text="Type de Transcation :" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="transactionTypeMenu" prefHeight="42.0" prefWidth="150.0" GridPane.columnIndex="1" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="89.0" prefWidth="422.0" text="Wilaya souhaitee :" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="wilayaTextField" prefHeight="132.0" prefWidth="416.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="89.0" prefWidth="422.0" text="prix minimum :" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="89.0" prefWidth="422.0" text="prix maximum :" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="89.0" prefWidth="422.0" text="type du bien :" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="89.0" prefWidth="422.0" text="superficie minimale :" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="surfaceMinNumfield" layoutX="10.0" layoutY="10.0" onKeyTyped="#digitinput" prefHeight="132.0" prefWidth="416.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Label alignment="CENTER" disable="true" layoutX="10.0" layoutY="10.0" prefHeight="89.0" prefWidth="422.0" text="nombre mimimale de pieces :" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="nbpiecesNumField" disable="true" layoutX="10.0" layoutY="10.0" onKeyTyped="#digitinput" prefHeight="132.0" prefWidth="416.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <ChoiceBox fx:id="bienTypeMenu" onInputMethodTextChanged="#activerNbPieces" prefHeight="42.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField fx:id="prixMinNumField" layoutX="307.0" layoutY="93.0" onKeyTyped="#digitinput" prefHeight="132.0" prefWidth="416.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="prixMaxNumField" layoutX="307.0" layoutY="176.0" onKeyTyped="#digitinput" prefHeight="132.0" prefWidth="416.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           </children>
+                        </GridPane>
+                        <Pane>
+                           <children>
+                              <Button fx:id="rechercherBouton" alignment="CENTER" contentDisplay="CENTER" layoutX="147.0" layoutY="2.0" mnemonicParsing="false" onAction="#rechercher" prefHeight="48.0" prefWidth="205.0" text="Rechercher" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="warning" layoutX="389.0" layoutY="-1.0" prefHeight="45.0" prefWidth="386.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </content>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </ScrollPane>
+         </center>
+         <top>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="77.0" prefWidth="850.0" text="veuillez saisir votre critere de recherche : " BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+            </Label>
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>

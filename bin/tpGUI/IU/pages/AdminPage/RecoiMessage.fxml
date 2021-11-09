@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tpGUI.Control.RecoiMessageControl">
+   <top>
+      <Label prefHeight="52.0" prefWidth="224.0" text="Les messages :" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <ScrollPane prefHeight="-Infinity" prefWidth="-Infinity" BorderPane.alignment="CENTER">
+         <content>
+            <VBox fx:id="listeMessage" prefHeight="-Infinity" prefWidth="100.0">
+               <children>
+                  <HBox fx:id="cas" alignment="CENTER" prefHeight="500.0" prefWidth="500.0">
+                     <children>
+                        <Label text="Biens" />
+                        <Label text="messages" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </HBox>
+               </children></VBox>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tpGUI.Control.ModifBienControl">
+   <top>
+      <Label alignment="CENTER" text="Ecrire les informations de bien que vous voulez modifier : " BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane fx:id="appartement" visible="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints />
+               </rowConstraints>
+               <children>
+                  <Label layoutX="30.0" layoutY="21.0" text="Type de bien :" textAlignment="CENTER">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Adresse :" textAlignment="CENTER" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Wilaya :" textAlignment="CENTER" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Superficie : " textAlignment="CENTER" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Proprietaire :" textAlignment="CENTER" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Transaction :" textAlignment="CENTER" GridPane.rowIndex="5">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Prix :" textAlignment="CENTER" GridPane.rowIndex="6">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Le prix est négociable : " textAlignment="CENTER" GridPane.rowIndex="7">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Descriptif :" textAlignment="CENTER" GridPane.rowIndex="8">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Date d'ajout :" textAlignment="CENTER" GridPane.rowIndex="9">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="URL des photos :" textAlignment="CENTER" GridPane.rowIndex="10">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Appartement" textAlignment="CENTER" GridPane.columnIndex="1">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nombre des pièces:" textAlignment="CENTER" GridPane.rowIndex="11">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Meublé:" textAlignment="CENTER" GridPane.rowIndex="12">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Etage:" textAlignment="CENTER" GridPane.rowIndex="13">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Type de l'appartement:" textAlignment="CENTER" GridPane.rowIndex="14">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Ascenseur:" textAlignment="CENTER" GridPane.rowIndex="15">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                   <TextField fx:id="adresse" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                   <TextField fx:id="wilaya" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                   <TextField fx:id="superficie" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                   <TextField fx:id="proprietaire" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                   <TextField fx:id="transaction" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                   <TextField fx:id="prix" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                   <TextField fx:id="prixNegociable" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                   <TextField fx:id="descriptif" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                   <TextField fx:id="date" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                   <TextField fx:id="uRLphotos" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                   <TextField fx:id="nbpieces" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                   <TextField fx:id="meuble" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                   <TextField fx:id="type" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                   <TextField fx:id="etage" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                   <TextField GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                   <TextField fx:id="ascenceur" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="maison" visible="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label layoutX="30.0" layoutY="21.0" text="Type de bien :" textAlignment="CENTER">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Adresse :" textAlignment="CENTER" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Wilaya :" textAlignment="CENTER" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Superficie : " textAlignment="CENTER" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Proprietaire :" textAlignment="CENTER" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Transaction :" textAlignment="CENTER" GridPane.rowIndex="5">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Prix :" textAlignment="CENTER" GridPane.rowIndex="6">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Le prix est négociable : " textAlignment="CENTER" GridPane.rowIndex="7">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Descriptif :" textAlignment="CENTER" GridPane.rowIndex="8">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Date d'ajout :" textAlignment="CENTER" GridPane.rowIndex="9">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="URL des photos :" textAlignment="CENTER" GridPane.rowIndex="10">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="uRLphotos13" text="Nombre des étages:" textAlignment="CENTER" GridPane.rowIndex="13">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="uRLphotos12" text="Garage:" textAlignment="CENTER" GridPane.rowIndex="14">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="uRLphotos14" text="Jardin:" textAlignment="CENTER" GridPane.rowIndex="15">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="uRLphotos16" text="Piscine:" textAlignment="CENTER" GridPane.rowIndex="16">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="uRLphotos19" text="La surface habitable:" textAlignment="CENTER" GridPane.rowIndex="17">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Maison" textAlignment="CENTER" GridPane.columnIndex="1">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="uRLphotos112" layoutX="335.0" layoutY="253.0" text="Nombre de pièces :" textAlignment="CENTER" GridPane.rowIndex="11">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="uRLphotos1121" text="Meublé :" textAlignment="CENTER" GridPane.rowIndex="12">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="adresse" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="wilaya" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="superficie" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="proprietaire" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="transaction" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="prix" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="prixNegociable" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField fx:id="descriptif" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <TextField fx:id="date" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <TextField fx:id="uRLphotos" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <TextField fx:id="nbpieces" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <TextField fx:id="meuble" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <TextField fx:id="garage" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                  <TextField fx:id="nbetage" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                  <TextField fx:id="piscine" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                  <TextField fx:id="jardin" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                  <TextField fx:id="surfaceHabitable" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="terrain" layoutX="10.0" layoutY="10.0" visible="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label layoutX="30.0" layoutY="21.0" text="Type de bien :" textAlignment="CENTER">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Adresse :" textAlignment="CENTER" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Wilaya :" textAlignment="CENTER" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Superficie : " textAlignment="CENTER" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Proprietaire :" textAlignment="CENTER" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Transaction :" textAlignment="CENTER" GridPane.rowIndex="5">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Prix :" textAlignment="CENTER" GridPane.rowIndex="6">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Le prix est négociable : " textAlignment="CENTER" GridPane.rowIndex="7">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Descriptif :" textAlignment="CENTER" GridPane.rowIndex="8">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="Date d'ajout :" textAlignment="CENTER" GridPane.rowIndex="9">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="21.0" text="URL des photos :" textAlignment="CENTER" GridPane.rowIndex="10">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Terrain" textAlignment="CENTER" GridPane.columnIndex="1">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Statut juridique:" textAlignment="CENTER" GridPane.rowIndex="11">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nombre de façade:" textAlignment="CENTER" GridPane.rowIndex="12">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Label>
+                   <TextField fx:id="adresse" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="wilaya" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="superficie" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="proprietaire" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="transaction" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="prix" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="prixNegociable" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField fx:id="descriptif" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <TextField fx:id="date" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <TextField fx:id="uRLphotos" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <TextField fx:id="statut" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <TextField fx:id="nbfacade" GridPane.columnIndex="1" GridPane.rowIndex="12" />      
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
+   </center>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="70.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="enregistrerBoutton" defaultButton="true" mnemonicParsing="false" onAction="#enregistrer" prefHeight="40.0" prefWidth="190.0" text="Enregistrer">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="annulerBoutton" defaultButton="true" mnemonicParsing="false" onAction="#annuler" prefHeight="40.0" prefWidth="190.0" text="Annuler">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="20.0" left="70.0" right="70.0" top="20.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>
